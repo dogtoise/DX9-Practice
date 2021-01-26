@@ -10,6 +10,9 @@
     <Filter Include="01.Geometry">
       <UniqueIdentifier>{9edc8f82-776d-41e1-a3a9-a0556f338610}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02.Demo">
+      <UniqueIdentifier>{971a916f-fc69-46f9-b8d1-9fe28a953ab0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h">
@@ -36,6 +39,18 @@
     <ClInclude Include="..\Headers\Cube.h">
       <Filter>01.Geometry</Filter>
     </ClInclude>
+    <ClInclude Include="..\Headers\Teapot.h">
+      <Filter>01.Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\DemoManager.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\IDemo.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\MeshesDemo.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp">
@@ -55,6 +70,18 @@
     </ClCompile>
     <ClCompile Include="..\Codes\Cube.cpp">
       <Filter>01.Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Teapot.cpp">
+      <Filter>01.Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\DemoManager.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\IDemo.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MeshesDemo.cpp">
+      <Filter>02.Demo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

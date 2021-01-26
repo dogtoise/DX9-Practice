@@ -153,7 +153,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Headers\Cube.h" />
+    <ClInclude Include="..\Headers\DemoManager.h" />
+    <ClInclude Include="..\Headers\IDemo.h" />
     <ClInclude Include="..\Headers\MainApp.h" />
+    <ClInclude Include="..\Headers\MeshesDemo.h" />
+    <ClInclude Include="..\Headers\Teapot.h" />
     <ClInclude Include="..\Headers\Triangle.h" />
     <ClInclude Include="..\Headers\VertexTypes.h" />
     <ClInclude Include="Client.h" />
@@ -163,7 +167,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Codes\Cube.cpp" />
+    <ClCompile Include="..\Codes\DemoManager.cpp" />
+    <ClCompile Include="..\Codes\IDemo.cpp" />
     <ClCompile Include="..\Codes\MainApp.cpp" />
+    <ClCompile Include="..\Codes\MeshesDemo.cpp" />
+    <ClCompile Include="..\Codes\Teapot.cpp" />
     <ClCompile Include="..\Codes\Triangle.cpp" />
     <ClCompile Include="..\Codes\VertexTypes.cpp" />
     <ClCompile Include="Client.cpp" />

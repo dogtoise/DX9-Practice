@@ -19,6 +19,8 @@ private :
 private :
 	// test
 	//class Triangle * triangle;
-	class Cube* cube;
+	//class Cube* cube;
+	//class Teapot* teapot;
+	class DemoManager* demoManager;
 };
 
