@@ -3,6 +3,7 @@
 #include "CGraphicDevice.h"
 
 #include "Triangle.h"
+#include "Cube.h"
 CMainApp::CMainApp()
 	: m_pGraphicDevice(CGraphicDevice::Get())
 {
@@ -21,12 +22,9 @@ HRESULT CMainApp::ReadyMainApp()
 	{
 		return E_FAIL;
 	}
-
-	triangle = new Triangle();
-	if (!triangle->Setup())
-	{
-		return E_FAIL;
-	}
+	cube = new Cube();
+	cube->Setup();
+	
 	return S_OK;
 }
 
@@ -41,12 +39,14 @@ void CMainApp::LateUpdateMainApp()
 void CMainApp::RenderMainApp()
 {
 	m_pGraphicDevice->RenderBegin();
-	triangle->Display(0);
+	//triangle->Display(0);
+	cube->Display();
 	m_pGraphicDevice->RenderEnd();
 }
 
 void CMainApp::ReleaseMainApp()
 {
 	m_pGraphicDevice->Destroy();
-	triangle->Cleanup();
+	//triangle->Cleanup();
+	cube->Cleanup();
 }

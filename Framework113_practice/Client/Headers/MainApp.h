@@ -18,6 +18,7 @@ private :
 
 private :
 	// test
-	class Triangle * triangle;
+	//class Triangle * triangle;
+	class Cube* cube;
 };
 

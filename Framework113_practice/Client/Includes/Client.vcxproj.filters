@@ -30,6 +30,12 @@
     <ClInclude Include="..\Headers\Triangle.h">
       <Filter>01.Geometry</Filter>
     </ClInclude>
+    <ClInclude Include="..\Headers\VertexTypes.h">
+      <Filter>01.Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Cube.h">
+      <Filter>01.Geometry</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp">
@@ -42,6 +48,12 @@
       <Filter>00.MainApp</Filter>
     </ClCompile>
     <ClCompile Include="..\Codes\Triangle.cpp">
+      <Filter>01.Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\VertexTypes.cpp">
+      <Filter>01.Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Cube.cpp">
       <Filter>01.Geometry</Filter>
     </ClCompile>
   </ItemGroup>

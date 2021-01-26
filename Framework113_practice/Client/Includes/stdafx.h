@@ -18,7 +18,8 @@
 #include <malloc.h>
 #include <memory.h>
 #include <tchar.h>
-
+#include <time.h>
+#include <timeapi.h>
 
 #include "Engine.h"
 

@@ -1,7 +1,8 @@
 #include "stdafx.h"
 #include "..\Headers\Triangle.h"
 #include "CGraphicDevice.h"
-const DWORD Vertex::FVF = D3DFVF_XYZ;
+#include "VertexTypes.h"
+
 Triangle::Triangle()
 {
 }
