@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Headers\AddressModes.h" />
     <ClInclude Include="..\Headers\ColorTriangle.h" />
     <ClInclude Include="..\Headers\Cube.h" />
     <ClInclude Include="..\Headers\DemoCube.h" />
@@ -176,6 +177,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Codes\AddressModes.cpp" />
     <ClCompile Include="..\Codes\ColorTriangle.cpp" />
     <ClCompile Include="..\Codes\Cube.cpp" />
     <ClCompile Include="..\Codes\DemoCube.cpp" />

@@ -1,3 +1,5 @@
-﻿  VSTransform.cpp
+﻿  MainApp.cpp
+  AddressModes.cpp
+  Generating Code...
   Client.vcxproj -> C:\Dev\DX9-Practice\Framework113_practice\Client\Includes\../Bin/Client.exe
   Client.vcxproj -> ../Bin/Client.pdb (Full PDB)

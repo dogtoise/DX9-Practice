@@ -81,6 +81,9 @@
     <ClInclude Include="..\Headers\VSTransform.h">
       <Filter>02.Demo</Filter>
     </ClInclude>
+    <ClInclude Include="..\Headers\AddressModes.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp">
@@ -138,6 +141,9 @@
       <Filter>01.Geometry</Filter>
     </ClCompile>
     <ClCompile Include="..\Codes\VSTransform.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\AddressModes.cpp">
       <Filter>02.Demo</Filter>
     </ClCompile>
   </ItemGroup>
