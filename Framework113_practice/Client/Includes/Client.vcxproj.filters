@@ -51,6 +51,12 @@
     <ClInclude Include="..\Headers\MeshesDemo.h">
       <Filter>02.Demo</Filter>
     </ClInclude>
+    <ClInclude Include="..\Headers\ColorTriangle.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\LitPyramid.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp">
@@ -81,6 +87,12 @@
       <Filter>02.Demo</Filter>
     </ClCompile>
     <ClCompile Include="..\Codes\MeshesDemo.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\ColorTriangle.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\LitPyramid.cpp">
       <Filter>02.Demo</Filter>
     </ClCompile>
   </ItemGroup>

@@ -7,6 +7,8 @@
 #include "Teapot.h"
 #include "DemoManager.h"
 #include "MeshesDemo.h"
+#include "ColorTriangle.h"
+
 CMainApp::CMainApp()
 	: m_pGraphicDevice(CGraphicDevice::Get())
 {
@@ -31,7 +33,8 @@ HRESULT CMainApp::ReadyMainApp()
 	//teapot->Setup();
 	demoManager = new DemoManager();
 	// todo : demoManager->push(new Teapot)
-	demoManager->Push(new MeshesDemo());
+	//demoManager->Push(new MeshesDemo());
+	demoManager->Push(new ColorTriangle());
 	demoManager->SetupDemo();
 
 	return S_OK;

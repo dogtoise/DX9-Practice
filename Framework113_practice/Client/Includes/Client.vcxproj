@@ -152,9 +152,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Headers\ColorTriangle.h" />
     <ClInclude Include="..\Headers\Cube.h" />
     <ClInclude Include="..\Headers\DemoManager.h" />
     <ClInclude Include="..\Headers\IDemo.h" />
+    <ClInclude Include="..\Headers\LitPyramid.h" />
     <ClInclude Include="..\Headers\MainApp.h" />
     <ClInclude Include="..\Headers\MeshesDemo.h" />
     <ClInclude Include="..\Headers\Teapot.h" />
@@ -166,9 +168,11 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Codes\ColorTriangle.cpp" />
     <ClCompile Include="..\Codes\Cube.cpp" />
     <ClCompile Include="..\Codes\DemoManager.cpp" />
     <ClCompile Include="..\Codes\IDemo.cpp" />
+    <ClCompile Include="..\Codes\LitPyramid.cpp" />
     <ClCompile Include="..\Codes\MainApp.cpp" />
     <ClCompile Include="..\Codes\MeshesDemo.cpp" />
     <ClCompile Include="..\Codes\Teapot.cpp" />
