@@ -163,6 +163,7 @@
     <ClInclude Include="..\Headers\LightHelper.h" />
     <ClInclude Include="..\Headers\LitPyramid.h" />
     <ClInclude Include="..\Headers\MainApp.h" />
+    <ClInclude Include="..\Headers\MaterialAlpha.h" />
     <ClInclude Include="..\Headers\MaterialHelper.h" />
     <ClInclude Include="..\Headers\MeshesDemo.h" />
     <ClInclude Include="..\Headers\Teapot.h" />
@@ -187,6 +188,7 @@
     <ClCompile Include="..\Codes\LightHelper.cpp" />
     <ClCompile Include="..\Codes\LitPyramid.cpp" />
     <ClCompile Include="..\Codes\MainApp.cpp" />
+    <ClCompile Include="..\Codes\MaterialAlpha.cpp" />
     <ClCompile Include="..\Codes\MaterialHelper.cpp" />
     <ClCompile Include="..\Codes\MeshesDemo.cpp" />
     <ClCompile Include="..\Codes\Teapot.cpp" />

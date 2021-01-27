@@ -84,6 +84,9 @@
     <ClInclude Include="..\Headers\AddressModes.h">
       <Filter>02.Demo</Filter>
     </ClInclude>
+    <ClInclude Include="..\Headers\MaterialAlpha.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp">
@@ -144,6 +147,9 @@
       <Filter>02.Demo</Filter>
     </ClCompile>
     <ClCompile Include="..\Codes\AddressModes.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MaterialAlpha.cpp">
       <Filter>02.Demo</Filter>
     </ClCompile>
   </ItemGroup>
