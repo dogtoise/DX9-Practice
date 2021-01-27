@@ -8,6 +8,7 @@
 #include "DemoManager.h"
 #include "MeshesDemo.h"
 #include "ColorTriangle.h"
+#include "LitPyramid.h"
 
 CMainApp::CMainApp()
 	: m_pGraphicDevice(CGraphicDevice::Get())
@@ -34,7 +35,8 @@ HRESULT CMainApp::ReadyMainApp()
 	demoManager = new DemoManager();
 	// todo : demoManager->push(new Teapot)
 	//demoManager->Push(new MeshesDemo());
-	demoManager->Push(new ColorTriangle());
+	//demoManager->Push(new ColorTriangle());
+	demoManager->Push(new LitPyramid());
 	demoManager->SetupDemo();
 
 	return S_OK;
