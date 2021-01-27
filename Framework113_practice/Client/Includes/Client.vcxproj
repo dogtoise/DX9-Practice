@@ -166,9 +166,11 @@
     <ClInclude Include="..\Headers\MaterialAlpha.h" />
     <ClInclude Include="..\Headers\MaterialHelper.h" />
     <ClInclude Include="..\Headers\MeshesDemo.h" />
+    <ClInclude Include="..\Headers\StencilMirror.h" />
     <ClInclude Include="..\Headers\Teapot.h" />
     <ClInclude Include="..\Headers\TexCube.h" />
     <ClInclude Include="..\Headers\TexQuad.h" />
+    <ClInclude Include="..\Headers\TextureAlpha.h" />
     <ClInclude Include="..\Headers\Triangle.h" />
     <ClInclude Include="..\Headers\VertexTypes.h" />
     <ClInclude Include="..\Headers\VSTransform.h" />
@@ -191,9 +193,11 @@
     <ClCompile Include="..\Codes\MaterialAlpha.cpp" />
     <ClCompile Include="..\Codes\MaterialHelper.cpp" />
     <ClCompile Include="..\Codes\MeshesDemo.cpp" />
+    <ClCompile Include="..\Codes\StencilMirror.cpp" />
     <ClCompile Include="..\Codes\Teapot.cpp" />
     <ClCompile Include="..\Codes\TexCube.cpp" />
     <ClCompile Include="..\Codes\TexQuad.cpp" />
+    <ClCompile Include="..\Codes\TextureAlpha.cpp" />
     <ClCompile Include="..\Codes\Triangle.cpp" />
     <ClCompile Include="..\Codes\VertexTypes.cpp" />
     <ClCompile Include="..\Codes\VSTransform.cpp" />

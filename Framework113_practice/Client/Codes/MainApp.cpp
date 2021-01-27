@@ -15,6 +15,8 @@
 #include "VSTransform.h"
 #include "AddressModes.h"
 #include "MaterialAlpha.h"
+#include "TextureAlpha.h"
+
 
 
 CMainApp::CMainApp()
@@ -49,7 +51,8 @@ HRESULT CMainApp::ReadyMainApp()
 	//demoManager->Push(new TexCube());
 	//demoManager->Push(new VSTransform());
 	//demoManager->Push(new AddressModes());
-	demoManager->Push(new MaterialAlpha());
+	//demoManager->Push(new MaterialAlpha());
+	demoManager->Push(new TextureAlpha());
 	demoManager->SetupDemo();
 
 	return S_OK;
