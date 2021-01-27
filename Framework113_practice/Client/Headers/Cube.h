@@ -1,17 +1,17 @@
 #pragma once
+
+
 class Cube
 {
 public:
 	Cube();
 	~Cube();
 
-	void Setup();
+	bool draw(D3DXMATRIX* world, D3DMATERIAL9* mtrl, IDirect3DTexture9* tex);
 
-	void Cleanup();
-
-	void Display();
 private :
-	IDirect3DVertexBuffer9 * VB = 0;
-	IDirect3DIndexBuffer9* IB = 0;
+	IDirect3DDevice9 * _device;
+	IDirect3DVertexBuffer9* _vb;
+	IDirect3DIndexBuffer9 * _ib;
 };
 

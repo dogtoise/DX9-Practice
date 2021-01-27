@@ -53,6 +53,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\hlsl.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -154,14 +155,21 @@
   <ItemGroup>
     <ClInclude Include="..\Headers\ColorTriangle.h" />
     <ClInclude Include="..\Headers\Cube.h" />
+    <ClInclude Include="..\Headers\DemoCube.h" />
     <ClInclude Include="..\Headers\DemoManager.h" />
+    <ClInclude Include="..\Headers\DirectionalLight.h" />
     <ClInclude Include="..\Headers\IDemo.h" />
+    <ClInclude Include="..\Headers\LightHelper.h" />
     <ClInclude Include="..\Headers\LitPyramid.h" />
     <ClInclude Include="..\Headers\MainApp.h" />
+    <ClInclude Include="..\Headers\MaterialHelper.h" />
     <ClInclude Include="..\Headers\MeshesDemo.h" />
     <ClInclude Include="..\Headers\Teapot.h" />
+    <ClInclude Include="..\Headers\TexCube.h" />
+    <ClInclude Include="..\Headers\TexQuad.h" />
     <ClInclude Include="..\Headers\Triangle.h" />
     <ClInclude Include="..\Headers\VertexTypes.h" />
+    <ClInclude Include="..\Headers\VSTransform.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -170,14 +178,21 @@
   <ItemGroup>
     <ClCompile Include="..\Codes\ColorTriangle.cpp" />
     <ClCompile Include="..\Codes\Cube.cpp" />
+    <ClCompile Include="..\Codes\DemoCube.cpp" />
     <ClCompile Include="..\Codes\DemoManager.cpp" />
+    <ClCompile Include="..\Codes\DirectionalLight.cpp" />
     <ClCompile Include="..\Codes\IDemo.cpp" />
+    <ClCompile Include="..\Codes\LightHelper.cpp" />
     <ClCompile Include="..\Codes\LitPyramid.cpp" />
     <ClCompile Include="..\Codes\MainApp.cpp" />
+    <ClCompile Include="..\Codes\MaterialHelper.cpp" />
     <ClCompile Include="..\Codes\MeshesDemo.cpp" />
     <ClCompile Include="..\Codes\Teapot.cpp" />
+    <ClCompile Include="..\Codes\TexCube.cpp" />
+    <ClCompile Include="..\Codes\TexQuad.cpp" />
     <ClCompile Include="..\Codes\Triangle.cpp" />
     <ClCompile Include="..\Codes\VertexTypes.cpp" />
+    <ClCompile Include="..\Codes\VSTransform.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -195,5 +210,6 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\hlsl.targets" />
   </ImportGroup>
 </Project>

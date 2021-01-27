@@ -20,6 +20,8 @@
 #include <tchar.h>
 #include <time.h>
 #include <timeapi.h>
+#include <math.h>
+#include <assert.h>
 
 #include "Engine.h"
 
@@ -42,3 +44,4 @@ const D3DXCOLOR    MAGENTA(D3DCOLOR_XRGB(255, 0, 255));
 #define WIN_WIDTH 800
 #define WIN_HEIGHT 600
 #define DEVICE CGraphicDevice::Get()->GetDevice()
+

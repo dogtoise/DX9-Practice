@@ -9,6 +9,11 @@
 #include "MeshesDemo.h"
 #include "ColorTriangle.h"
 #include "LitPyramid.h"
+#include "DirectionalLight.h"
+#include "TexQuad.h"
+#include "TexCube.h"
+#include "VSTransform.h"
+
 
 CMainApp::CMainApp()
 	: m_pGraphicDevice(CGraphicDevice::Get())
@@ -36,7 +41,11 @@ HRESULT CMainApp::ReadyMainApp()
 	// todo : demoManager->push(new Teapot)
 	//demoManager->Push(new MeshesDemo());
 	//demoManager->Push(new ColorTriangle());
-	demoManager->Push(new LitPyramid());
+	//demoManager->Push(new LitPyramid());
+	//demoManager->Push(new DirectionalLight());
+	//demoManager->Push(new TexQuad());
+	//demoManager->Push(new TexCube());
+	demoManager->Push(new VSTransform());
 	demoManager->SetupDemo();
 
 	return S_OK;

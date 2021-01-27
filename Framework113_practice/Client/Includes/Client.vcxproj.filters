@@ -13,6 +13,9 @@
     <Filter Include="02.Demo">
       <UniqueIdentifier>{971a916f-fc69-46f9-b8d1-9fe28a953ab0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="98.Utility">
+      <UniqueIdentifier>{0b59df2b-d31a-4163-b983-48d614f85913}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h">
@@ -36,9 +39,6 @@
     <ClInclude Include="..\Headers\VertexTypes.h">
       <Filter>01.Geometry</Filter>
     </ClInclude>
-    <ClInclude Include="..\Headers\Cube.h">
-      <Filter>01.Geometry</Filter>
-    </ClInclude>
     <ClInclude Include="..\Headers\Teapot.h">
       <Filter>01.Geometry</Filter>
     </ClInclude>
@@ -55,6 +55,30 @@
       <Filter>02.Demo</Filter>
     </ClInclude>
     <ClInclude Include="..\Headers\LitPyramid.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\DirectionalLight.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\MaterialHelper.h">
+      <Filter>98.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\LightHelper.h">
+      <Filter>98.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\TexQuad.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\TexCube.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\DemoCube.h">
+      <Filter>01.Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Cube.h">
+      <Filter>01.Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\VSTransform.h">
       <Filter>02.Demo</Filter>
     </ClInclude>
   </ItemGroup>
@@ -74,9 +98,6 @@
     <ClCompile Include="..\Codes\VertexTypes.cpp">
       <Filter>01.Geometry</Filter>
     </ClCompile>
-    <ClCompile Include="..\Codes\Cube.cpp">
-      <Filter>01.Geometry</Filter>
-    </ClCompile>
     <ClCompile Include="..\Codes\Teapot.cpp">
       <Filter>01.Geometry</Filter>
     </ClCompile>
@@ -93,6 +114,30 @@
       <Filter>02.Demo</Filter>
     </ClCompile>
     <ClCompile Include="..\Codes\LitPyramid.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\DirectionalLight.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MaterialHelper.cpp">
+      <Filter>98.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\LightHelper.cpp">
+      <Filter>98.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\TexQuad.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\TexCube.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\DemoCube.cpp">
+      <Filter>01.Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Cube.cpp">
+      <Filter>01.Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\VSTransform.cpp">
       <Filter>02.Demo</Filter>
     </ClCompile>
   </ItemGroup>

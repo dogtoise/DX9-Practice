@@ -4,141 +4,135 @@
 
 Cube::Cube()
 {
+	DEVICE->CreateVertexBuffer
+	(
+		24 * sizeof(TextureVertex),
+		D3DUSAGE_WRITEONLY,
+		TextureVertex::FVF,
+		D3DPOOL_MANAGED,
+		&_vb,
+		0
+	);
+
+	TextureVertex* vertices;
+	
+	_vb->Lock(0, 0, (void**)&vertices, 0);
+
+	// fill in the front face vertex data
+	vertices[0] = TextureVertex(-1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f);
+	vertices[1] = TextureVertex(-1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f);
+	vertices[2] = TextureVertex(1.0f, 1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f);
+	vertices[3] = TextureVertex(1.0f, -1.0f, -1.0f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f);
+
+	// fill in the back face verticesertex data
+	vertices[4] = TextureVertex(-1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f);
+	vertices[5] = TextureVertex(1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f);
+	vertices[6] = TextureVertex(1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
+	vertices[7] = TextureVertex(-1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f);
+
+	// fill in the top face verticesertex data
+	vertices[8] = TextureVertex(-1.0f, 1.0f, -1.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f);
+	vertices[9] = TextureVertex(-1.0f, 1.0f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f);
+	vertices[10] = TextureVertex(1.0f, 1.0f, 1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f);
+	vertices[11] = TextureVertex(1.0f, 1.0f, -1.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f);
+
+	// fill in the bottom face TextureVertex data
+	vertices[12] = TextureVertex(-1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f);
+	vertices[13] = TextureVertex(1.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f);
+	vertices[14] = TextureVertex(1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f);
+	vertices[15] = TextureVertex(-1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f);
+
+	// fill in the left face TextureVertex data
+	vertices[16] = TextureVertex(-1.0f, -1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+	vertices[17] = TextureVertex(-1.0f, 1.0f, 1.0f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
+	vertices[18] = TextureVertex(-1.0f, 1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f);
+	vertices[19] = TextureVertex(-1.0f, -1.0f, -1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+
+	// fill in the right face TextureVertex data
+	vertices[20] = TextureVertex(1.0f, -1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+	vertices[21] = TextureVertex(1.0f, 1.0f, -1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f);
+	vertices[22] = TextureVertex(1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f);
+	vertices[23] = TextureVertex(1.0f, -1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+
+	_vb->Unlock();
+
+
+	DEVICE->CreateIndexBuffer
+	(
+		36 * sizeof(WORD),
+		D3DUSAGE_WRITEONLY,
+		D3DFMT_INDEX16,
+		D3DPOOL_MANAGED,
+		&_ib,
+		0
+	);
+
+	WORD* indices = 0;
+	_ib->Lock(0, 0, (void**)&indices, 0);
+
+	// findicesll indicesn the front face indicesndex data
+	indices[0] = 0; indices[1] = 1; indices[2] = 2;
+	indices[3] = 0; indices[4] = 2; indices[5] = 3;
+
+	// findicesll indicesn the back face indicesndex data
+	indices[6] = 4; indices[7] = 5; indices[8] = 6;
+	indices[9] = 4; indices[10] = 6; indices[11] = 7;
+
+	// findicesll indicesn the top face indicesndex data
+	indices[12] = 8; indices[13] = 9; indices[14] = 10;
+	indices[15] = 8; indices[16] = 10; indices[17] = 11;
+
+	// findicesll indicesn the bottom face indicesndex data
+	indices[18] = 12; indices[19] = 13; indices[20] = 14;
+	indices[21] = 12; indices[22] = 14; indices[23] = 15;
+
+	// findicesll indicesn the left face indicesndex data
+	indices[24] = 16; indices[25] = 17; indices[26] = 18;
+	indices[27] = 16; indices[28] = 18; indices[29] = 19;
+
+	// findicesll indicesn the rindicesght face indicesndex data
+	indices[30] = 20; indices[31] = 21; indices[32] = 22;
+	indices[33] = 20; indices[34] = 22; indices[35] = 23;
+
+	_ib->Unlock();
 }
 
 
 Cube::~Cube()
 {
+	if (_vb)
+	{
+		_vb->Release();
+		_vb = nullptr;
+	}
+	if (_ib)
+	{
+		_ib->Release();
+		_ib = nullptr;
+	}
 }
 
-void Cube::Setup()
+bool Cube::draw(D3DXMATRIX * world, D3DMATERIAL9 * mtrl, IDirect3DTexture9 * tex)
 {
-	DEVICE->CreateVertexBuffer
+	if (world)
+		DEVICE->SetTransform(D3DTS_WORLD, world);
+	if (mtrl)
+		DEVICE->SetMaterial(mtrl);
+	if (tex)
+		DEVICE->SetTexture(0,tex);
+
+	DEVICE->SetStreamSource(0, _vb, 0, sizeof(TextureVertex));
+	DEVICE->SetIndices(_ib);
+	DEVICE->SetFVF(TextureVertex::FVF);
+	DEVICE->DrawIndexedPrimitive
 	(
-		8 * sizeof(Vertex),
-		D3DUSAGE_WRITEONLY,
-		Vertex::FVF,
-		D3DPOOL_MANAGED,
-		&VB,
-		0
+		D3DPT_TRIANGLELIST,
+		0, 
+		0, 
+		24,
+		0, 
+		12
 	);
 
-	DEVICE->CreateIndexBuffer
-	(
-		36 * sizeof(WORD),
-		D3DUSAGE_WRITEONLY, 
-		D3DFMT_INDEX16,
-		D3DPOOL_MANAGED,
-		&IB,
-		0
-	);
-
-	Vertex* vertices;
-	VB->Lock(0, 0, (void**)&vertices, 0);
-
-	// vertices of a unit cube
-	vertices[0] = Vertex(-1.0f, -1.0f, -1.0f);
-	vertices[1] = Vertex(-1.0f, 1.0f, -1.0f);
-	vertices[2] = Vertex(1.0f, 1.0f, -1.0f);
-	vertices[3] = Vertex(1.0f, -1.0f, -1.0f);
-	vertices[4] = Vertex(-1.0f, -1.0f, 1.0f);
-	vertices[5] = Vertex(-1.0f, 1.0f, 1.0f);
-	vertices[6] = Vertex(1.0f, 1.0f, 1.0f);
-	vertices[7] = Vertex(1.0f, -1.0f, 1.0f);
-	
-	VB->Unlock();
-
-	// define the triangle of the cube.
-	WORD* indices = 0;
-	IB->Lock(0, 0, (void**)&indices, 0);
-
-	// front side
-	indices[0] = 0; indices[1] = 1; indices[2] = 2;
-	indices[3] = 0; indices[4] = 2; indices[5] = 3;
-
-	// back side
-	indices[6] = 4; indices[7] = 6; indices[8] = 5;
-	indices[9] = 4; indices[10] = 7; indices[11] = 6;
-
-	// left side
-	indices[12] = 4; indices[13] = 5; indices[14] = 1;
-	indices[15] = 4; indices[16] = 1; indices[17] = 0;
-
-	// right side
-	indices[18] = 3; indices[19] = 2; indices[20] = 6;
-	indices[21] = 3; indices[22] = 6; indices[23] = 7;
-
-	// top
-	indices[24] = 1; indices[25] = 5; indices[26] = 6;
-	indices[27] = 1; indices[28] = 6; indices[29] = 2;
-
-	// bottom
-	indices[30] = 4; indices[31] = 0; indices[32] = 3;
-	indices[33] = 4; indices[34] = 3; indices[35] = 7;
-
-	IB->Unlock();
-
-	D3DXVECTOR3 position(0.0f, 0.0f, -5.0f);
-	// what is target? 
-	D3DXVECTOR3 target(0.0f, 0.0f, 0.0f);
-	D3DXVECTOR3 up(0.0f, 1.0f, 0.0f);
-	D3DXMATRIX viewMatrix;
-
-	D3DXMatrixLookAtLH(&viewMatrix, &position, &target, &up);
-
-	DEVICE->SetTransform(D3DTS_VIEW, &viewMatrix);
-
-
-	// Set the projection matrix
-	D3DXMATRIX proj;
-	D3DXMatrixPerspectiveFovLH
-	(
-		&proj,
-		D3DX_PI* 0.5f,  // 90 degree
-		(float)WIN_WIDTH / (float)WIN_HEIGHT,
-		1.0f,
-		1000.0f
-	);
-
-	DEVICE->SetTransform(D3DTS_PROJECTION, &proj);
-
-
-	DEVICE->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);
-
-
-}
-
-void Cube::Cleanup()
-{
-	VB->Release();
-	IB->Release();
-}
-
-void Cube::Display()
-{
-	// spin the cube
-	D3DXMATRIX Rx, Ry;
-
-	// rotate 45 degree on x-axis
-	D3DXMatrixRotationX(&Rx, 3.14f / 4.0f);
-
-	static float y = 0.0f;
-	D3DXMatrixRotationY(&Ry, y);
-	y += 0.001f;
-
-	// reset angle to zero when angle reaches 2 * PI
-	if (y >= 6.28f)
-		y = 0.0f;
-
-
-	D3DXMATRIX worldMatrix = Rx * Ry;
-
-	DEVICE->SetTransform(D3DTS_WORLD, &worldMatrix);
-
-	DEVICE->SetStreamSource(0, VB, 0, sizeof(Vertex));
-	DEVICE->SetIndices(IB);
-	DEVICE->SetFVF(Vertex::FVF);
-
-	// Draw cube
-	DEVICE->DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 0, 8, 0, 12);
+	return true;
 }
