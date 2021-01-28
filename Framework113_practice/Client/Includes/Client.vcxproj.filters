@@ -93,6 +93,15 @@
     <ClInclude Include="..\Headers\StencilMirror.h">
       <Filter>02.Demo</Filter>
     </ClInclude>
+    <ClInclude Include="..\Headers\StencilShadow.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\StencilMirrorShadow.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\PSMultiTexture.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp">
@@ -162,6 +171,15 @@
       <Filter>02.Demo</Filter>
     </ClCompile>
     <ClCompile Include="..\Codes\StencilMirror.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\StencilShadow.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\StencilMirrorShadow.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\PSMultiTexture.cpp">
       <Filter>02.Demo</Filter>
     </ClCompile>
   </ItemGroup>

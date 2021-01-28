@@ -16,8 +16,9 @@
 #include "AddressModes.h"
 #include "MaterialAlpha.h"
 #include "TextureAlpha.h"
-
-
+#include "StencilMirror.h"
+#include "StencilShadow.h"
+#include "PSMultiTexture.h"
 
 CMainApp::CMainApp()
 	: m_pGraphicDevice(CGraphicDevice::Get())
@@ -52,7 +53,10 @@ HRESULT CMainApp::ReadyMainApp()
 	//demoManager->Push(new VSTransform());
 	//demoManager->Push(new AddressModes());
 	//demoManager->Push(new MaterialAlpha());
-	demoManager->Push(new TextureAlpha());
+	//demoManager->Push(new TextureAlpha());
+	//demoManager->Push(new StencilMirror());
+	//demoManager->Push(new StencilShadow());
+	demoManager->Push(new PSMultiTexture());
 	demoManager->SetupDemo();
 
 	return S_OK;

@@ -166,7 +166,10 @@
     <ClInclude Include="..\Headers\MaterialAlpha.h" />
     <ClInclude Include="..\Headers\MaterialHelper.h" />
     <ClInclude Include="..\Headers\MeshesDemo.h" />
+    <ClInclude Include="..\Headers\PSMultiTexture.h" />
     <ClInclude Include="..\Headers\StencilMirror.h" />
+    <ClInclude Include="..\Headers\StencilMirrorShadow.h" />
+    <ClInclude Include="..\Headers\StencilShadow.h" />
     <ClInclude Include="..\Headers\Teapot.h" />
     <ClInclude Include="..\Headers\TexCube.h" />
     <ClInclude Include="..\Headers\TexQuad.h" />
@@ -193,7 +196,10 @@
     <ClCompile Include="..\Codes\MaterialAlpha.cpp" />
     <ClCompile Include="..\Codes\MaterialHelper.cpp" />
     <ClCompile Include="..\Codes\MeshesDemo.cpp" />
+    <ClCompile Include="..\Codes\PSMultiTexture.cpp" />
     <ClCompile Include="..\Codes\StencilMirror.cpp" />
+    <ClCompile Include="..\Codes\StencilMirrorShadow.cpp" />
+    <ClCompile Include="..\Codes\StencilShadow.cpp" />
     <ClCompile Include="..\Codes\Teapot.cpp" />
     <ClCompile Include="..\Codes\TexCube.cpp" />
     <ClCompile Include="..\Codes\TexQuad.cpp" />
