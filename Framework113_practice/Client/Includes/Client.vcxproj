@@ -177,6 +177,7 @@
     <ClInclude Include="..\Headers\Triangle.h" />
     <ClInclude Include="..\Headers\VertexTypes.h" />
     <ClInclude Include="..\Headers\VSTransform.h" />
+    <ClInclude Include="..\Headers\XFile.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -207,6 +208,7 @@
     <ClCompile Include="..\Codes\Triangle.cpp" />
     <ClCompile Include="..\Codes\VertexTypes.cpp" />
     <ClCompile Include="..\Codes\VSTransform.cpp" />
+    <ClCompile Include="..\Codes\XFile.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

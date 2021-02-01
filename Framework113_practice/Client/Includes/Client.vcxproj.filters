@@ -102,6 +102,9 @@
     <ClInclude Include="..\Headers\PSMultiTexture.h">
       <Filter>02.Demo</Filter>
     </ClInclude>
+    <ClInclude Include="..\Headers\XFile.h">
+      <Filter>02.Demo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp">
@@ -180,6 +183,9 @@
       <Filter>02.Demo</Filter>
     </ClCompile>
     <ClCompile Include="..\Codes\PSMultiTexture.cpp">
+      <Filter>02.Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\XFile.cpp">
       <Filter>02.Demo</Filter>
     </ClCompile>
   </ItemGroup>

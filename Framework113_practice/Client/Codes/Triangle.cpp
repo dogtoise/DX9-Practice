@@ -17,7 +17,7 @@ bool Triangle::Setup()
 	DEVICE->CreateVertexBuffer
 	(
 		3 * sizeof(Vertex),
-		D3DUSAGE_WRITEONLY, 
+		D3DUSAGE_WRITEONLY,
 		Vertex::FVF,
 		D3DPOOL_MANAGED,
 		&triangleBuffer,
@@ -42,7 +42,16 @@ bool Triangle::Setup()
 		1.0f, 
 		1000.0f
 	);
+	D3DXVECTOR3 vec;
+	vec.x = 4;
+	vec.y = 10;
+	vec.z = -2;
+	D3DXMATRIX mat;
+	D3DXMatrixTranslation(&mat, vec.x, vec.y, vec.z);
+
 	DEVICE->SetTransform(D3DTS_PROJECTION, &proj);
+	DEVICE->SetTransform(D3DTS_WORLD, &mat);
+	DEVICE->SetTransform(D3DTS_VIEW, &mat);
 
 	DEVICE->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);
 

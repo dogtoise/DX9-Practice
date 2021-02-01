@@ -19,6 +19,7 @@
 #include "StencilMirror.h"
 #include "StencilShadow.h"
 #include "PSMultiTexture.h"
+#include "XFile.h"
 
 CMainApp::CMainApp()
 	: m_pGraphicDevice(CGraphicDevice::Get())
@@ -56,7 +57,8 @@ HRESULT CMainApp::ReadyMainApp()
 	//demoManager->Push(new TextureAlpha());
 	//demoManager->Push(new StencilMirror());
 	//demoManager->Push(new StencilShadow());
-	demoManager->Push(new PSMultiTexture());
+	//demoManager->Push(new PSMultiTexture());
+	demoManager->Push(new XFile());
 	demoManager->SetupDemo();
 
 	return S_OK;
